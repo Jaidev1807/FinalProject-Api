@@ -1,0 +1,163 @@
+/* Reset some default styles to ensure consistency */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Links converted to buttons */
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Giveaway page styles */
+ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Popular Games page styles */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  flex-basis: 45%;
+  padding: 10px;
+  background-color: #bcb6b6;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+/* Index page styles */
+ul {
+  margin-bottom: 30px;
+}
+/* Index page styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-top: 100px;
+  background-color: #d0c9c9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  margin-right: 20px;
+  background-color: #d0c9c9;
+}
+
+.menu-link {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #0056b3;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #b2aeae;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+ul.pagination-list {
+  display: inline-block;
+}
+
+a.pagination-link {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  li {
+    flex-basis: 100%;
+  }
+}

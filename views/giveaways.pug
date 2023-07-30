@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Giveaways
+    link(rel="stylesheet", href="styles.css")
+  body
+    include header
+    h1 Giveaways
+    ul
+      each giveaway in upcomingGames
+        li
+          h2= giveaway.title
+          img(src=giveaway.thumbnail, alt=giveaway.title)
+          p Description: #{giveaway.description}
+          p Worth: #{giveaway.worth}
+          p Platforms: #{giveaway.platforms}
+          p Published Date: #{giveaway.published_date}
+          p End Date: #{giveaway.end_date}
+          a(href=giveaway.open_giveaway_url) View Giveaway
+    include footer   
+          
+

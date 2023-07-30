@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Game Details
+  body
+    include header
+    h1= gameDetails.title
+    img(src=gameDetails.thumbnail, alt=gameDetails.title)
+    p Genre: #{gameDetails.genre}
+    p Platform: #{gameDetails.platform}
+    p Publisher: #{gameDetails.publisher}
+    p Developer: #{gameDetails.developer}
+    p Release Date: #{gameDetails.release_date}
+    p Short Description: #{gameDetails.short_description}
+    a(href=gameDetails.game_url) Click here to play the game
+    h1 Minimum System Requirements 
+    p OS: #{gameDetails.minimum_system_requirements.os}
+    p Processor:  #{gameDetails.minimum_system_requirements.processor}
+    p Memory: #{gameDetails.minimum_system_requirements.memory}
+    p Graphics: #{gameDetails.minimum_system_requirements.graphics}
+    p Storage: #{gameDetails.minimum_system_requirements.storage}
+    include footer

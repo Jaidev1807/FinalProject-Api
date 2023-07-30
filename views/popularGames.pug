@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Popular Games
+    link(rel="stylesheet", href="styles.css")
+  body
+    include header
+    h1 Popular Games
+    ul
+      each game in popularGames
+        li
+          h2= game.title
+          img(src=game.thumbnail, alt=game.title)
+          p Description: #{game.short_description}
+          p Genre: #{game.genre}
+          p Release Date: #{game.release_date}
+          a(href=`/popular-games/${game.id}`) View Details
+    include footer      
