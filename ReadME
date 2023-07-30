@@ -1,0 +1,51 @@
+# Gaming Pages Web Application
+
+## Overview
+
+The Gaming Pages web application is a simple Node.js application that displays information about popular games and gaming giveaways. It fetches data from two different APIs using Axios and displays the information on separate pages using Pug templates.
+
+## Prerequisites
+
+Before running the application, make sure you have the following installed on your system:
+
+- Node.js: https://nodejs.org (LTS version recommended)
+- npm (Node Package Manager): This comes bundled with Node.js.
+
+## Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/Jaidev1807/FinalProject-Api.git
+
+   ```
+
+2. Install the required npm packages:
+   npm install
+
+## Usage
+
+1. Start the server:
+   node index.js
+
+2. Open your web browser and visit http://localhost:3000 to access the index page.
+
+   The index page contains links to two sections: "Popular Games" and "Giveaways."
+   Clicking on the "Popular Games" link will take you to a page that displays popular games information.
+   Clicking on the "Giveaways" link will take you to a page that displays information about gaming giveaways.
+
+3. To access the popular games and giveaways pages directly, use the following URLs:
+
+   Popular Games: http://localhost:3000/popular-games
+   Giveaways: http://localhost:3000/giveaways
+
+## APIs Used
+
+    The application fetches data from the following APIs:
+
+    Free-to-Play Games Database API: https://free-to-play-games-database.p.rapidapi.com/api/filter
+    GamerPower API:https://gamerpower.p.rapidapi.com/api/filter
+
+## API Key
+
+    API-key : a77371552fmshbd70316975a2b93p1fc797jsnda4a2f8d9921
